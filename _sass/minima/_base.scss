@@ -151,7 +151,7 @@ code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: #ffffff;
 }
 
 code {
@@ -181,6 +181,7 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  border-bottom: 5px solid $grey-color-dark;
   @extend %clearfix;
 
   @include media-query($on-laptop) {
