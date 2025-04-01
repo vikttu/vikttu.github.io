@@ -45,15 +45,19 @@
 
 .intro-button{
     text-transform: uppercase;
+    color: black !important;
+    background-color: #E0A32A;
+    padding: 10px 30px;
 }
 
 .home-items {
     display: flex;
     flex-direction: column;
+    margin-top: 30vw;
 
     @media (min-width: 800px) {
         justify-content: space-between;
-        margin-top: 5vw;
+        margin-top: 10vw;
         flex-direction: row;
     }
 }
@@ -61,22 +65,31 @@
 .item-icon {
     height: 40vw;
     align-self: center;
-    
+
     @media (min-width: 800px) {
         height: 10vw;
     }
+}
+
+.item-button {
+    text-transform: uppercase;
+    color: black !important;
+    background-color: #E0A32A;
+    padding: 5px 37px;
 }
 
 .home-item {
     display: flex;
     flex-direction: column;
     font-size: 5.8vw;
+    margin-top: 30vw;
     
     @media (min-width: 800px) {
         height: 30vw;
         width: 13vw;
         font-size: 1.3vw;
         font-weight: 100;
+        margin-top: 0;
     }
 }
 
