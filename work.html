@@ -2,11 +2,13 @@
 layout: page
 ---
 {% for category in site.categories %}
-<section>
+<div class="category">
   <label>{{ category[0] }}</label>
+</div>
+<section class="preview-collection">
     {% for post in site.posts %}
-      <div>
-        <a href="{{ post.url }}" class="preview-post-title">
+      <div class="preview-post">
+        <a href="{{ post.url }}">
           <img src="{{ post.img }}" class="preview-post-cover" />
           <h2>
             {{ post.title }}
@@ -15,10 +17,10 @@ layout: page
         <p>
           {{ post.excerpt }}
         </p>
-        <div>
-          <h4>Tags:</h4>
+        <div class="preview-tags">
+          <h4 class="preview-tags-title">Tags:</h4>
           {% for tag in site.tags %}
-          <label>{{ tag[0] }}</label>
+          <label class="preview-tags-label">{{ tag[0] }}</label>
           {% endfor %}
         </div>
       </div>
