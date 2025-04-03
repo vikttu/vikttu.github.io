@@ -100,3 +100,47 @@
         font-size: 1.8vw !important;
     }
 }
+
+.preview-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.preview-post {
+    height: 76vw;
+    width: 100vw;
+    margin-top: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @media (min-width: 800px) {
+        height: 20vw;
+        width: 20vw;
+    }
+}
+
+.preview-post-cover {
+    height: 30vw;
+
+    @media (min-width: 800px) {
+        height: 8vw;
+    }
+}
+
+.preview-tags {
+    display: flex;
+    align-items: baseline;
+}
+
+.preview-tags-title {
+    margin: 0;
+}
+
+.preview-tags-label {
+    margin-left: 5px;
+}
+
+.category {
+    margin-top: 20px;
+}
